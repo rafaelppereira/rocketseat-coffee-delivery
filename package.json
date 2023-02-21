@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "start:dev": "next dev",
+    "start:build": "next build",
     "start": "next start",
+    "start:server": "json-server --watch src/services/api.json --port 3333",
     "lint": "next lint"
   },
   "dependencies": {
@@ -13,11 +14,22 @@
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
+    "axios": "^1.2.5",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",
+    "json-server": "^0.17.1",
     "next": "13.1.5",
+    "phosphor-react": "^1.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-toastify": "^9.1.1",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/react-toastify": "^4.1.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
   }
 }
